@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9dd3aa9-4f9a-4054-85e7-1a0c24852634">
+  <producedTypes>
+    <objectType typeId="6dab81ed-154d-4091-b9de-f2e2385e609f" valueTypeId="a04a3394-d16b-41bc-8414-d0d262ae0dd5"/>
+    <managerType typeId="76860138-2499-45df-80bd-9724a3c6d327" valueTypeId="0c0bb076-23d0-4700-b28d-0be02b193f56"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.Форма</defaultForm>
+  <attributes uuid="1f265d43-9b86-4398-a1f5-5b3b6d25e2a3">
+    <name>ИДЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДЗадания</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="40edd1dc-15d1-437d-b895-3f037b7f7a12">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07cb6e13-4a4d-42cb-bf90-01f13073949c">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b27fd9c2-3019-430f-871f-a9d56263bb35">
+    <name>Индикатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индикатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="baecf11e-286a-4c57-8629-90875b3d6e17">
+    <name>СтрокаСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка состояния</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="a3dd2738-4673-4a15-bc3a-32af6ab0afec">
+    <producedTypes>
+      <objectType typeId="8833bb90-73da-451c-8176-0968be309357" valueTypeId="9276b4fc-7e63-41a2-82ad-6b90faef08c5"/>
+      <rowType typeId="d99fa8dc-666c-42c0-95df-9fcf3b35702f" valueTypeId="30cbcf4a-3b78-4fa2-a57a-61b2255abe2f"/>
+    </producedTypes>
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <attributes uuid="aa5a2d0e-3eff-412b-a27e-8f1068938557">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2d71db49-4edb-4c35-b1d7-bce43c3d3b2a">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8fffbe46-0ca9-4838-857a-23b5715c7c31">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

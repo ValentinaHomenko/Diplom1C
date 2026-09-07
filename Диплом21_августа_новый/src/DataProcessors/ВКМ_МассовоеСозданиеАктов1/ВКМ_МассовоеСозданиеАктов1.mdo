@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65a0c4b4-799a-4c46-9aae-0cf579c84d12">
+  <producedTypes>
+    <objectType typeId="bc172e37-7131-4586-93a6-75221744843e" valueTypeId="0d1fc53e-4af5-482b-bb00-691f72954077"/>
+    <managerType typeId="49499b4d-d41c-4cae-8d4c-bd31965a6449" valueTypeId="f581fb48-a16f-44b6-91b1-0ee7b61b6c5b"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов1.Form.ФормаОсновная</defaultForm>
+  <attributes uuid="5999e079-9c6e-4217-afd0-1b920798182f">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="382c26b8-9cd0-4106-99c6-4296d4bdd6cb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="046c393e-6aea-4f8e-b722-ac24130e8ffd">
+    <name>ФормаОсновная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма основная</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cccab2c5-0f8a-4c59-907f-f453c1c3f789">
+    <name>ЗапросПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос параметров</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

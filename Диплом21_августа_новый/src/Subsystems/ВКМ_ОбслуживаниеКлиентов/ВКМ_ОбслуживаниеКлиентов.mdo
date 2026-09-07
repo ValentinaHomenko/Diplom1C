@@ -14,5 +14,6 @@
   <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
-  <content>InformationRegister.ВКМ_ОбновлениеБотаТелеграм</content>
+  <content>InformationRegister.ВКМ_МасовоеСозданиеДокументов</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов2</content>
 </mdclass:Subsystem>

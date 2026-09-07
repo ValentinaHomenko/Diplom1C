@@ -14,7 +14,8 @@
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>Constant.ВКМ_ТокенТелеграмБот</content>
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
-  <content>InformationRegister.ВКМ_ОбновлениеБотаТелеграм</content>
   <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
   <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
+  <content>InformationRegister.ВКМ_МасовоеСозданиеДокументов</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов2</content>
 </mdclass:Subsystem>

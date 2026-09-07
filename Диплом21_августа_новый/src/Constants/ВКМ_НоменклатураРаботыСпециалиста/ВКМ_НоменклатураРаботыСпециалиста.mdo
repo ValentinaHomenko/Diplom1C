@@ -11,7 +11,7 @@
     <value>ВКМ номенклатура работы специалиста</value>
   </synonym>
   <type>
-    <types>CatalogRef.Номенклатура</types>
+    <types>CatalogRef.Пользователи</types>
   </type>
   <useStandardCommands>true</useStandardCommands>
   <minValue xsi:type="core:UndefinedValue"/>
