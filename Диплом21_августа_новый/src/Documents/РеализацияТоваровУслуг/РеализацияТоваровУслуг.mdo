@@ -404,4 +404,19 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <templates uuid="98a91f87-daf1-4235-913a-6a36a52a3421">
+    <name>ПФ_MXL_Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт</value>
+    </synonym>
+  </templates>
+  <templates uuid="409c249f-a251-4de6-9065-40ac5a20562d">
+    <name>ПФ_Docx_Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт docx </value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
 </mdclass:Document>
