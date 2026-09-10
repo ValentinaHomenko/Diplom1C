@@ -2003,6 +2003,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.ДоговорИРеализация.Attribute.Договор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ПраваРолей.Dimension.Роль</name>
 		<right>
 			<name>View</name>
@@ -3586,6 +3597,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ.Dimension.Очередь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.Attribute.Период</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -10056,6 +10078,17 @@
 	</object>
 	<object>
 		<name>Document.РеализацияТоваровУслуг.TabularSection.Услуги.Attribute.Количество</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.ДоговорИРеализация.Attribute.Документ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -17015,6 +17048,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов</name>
+		<right>
+			<name>Use</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.КлючиДоступаКРегистрам.Dimension.Поле1</name>
 		<right>
 			<name>View</name>
@@ -18532,6 +18576,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.КлючиДоступаКОбъектам.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.ДоговорИРеализация</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

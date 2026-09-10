@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Button">
+    <name>СоздатьРеализацииДоговор</name>
+    <id>60</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>СоздатьРеализацииДоговорРасширеннаяПодсказка</name>
+      <id>61</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualButton</type>
+    <commandName>Form.Command.СоздатьРеализацииДоговор</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:Button">
+    <name>Заполнить</name>
+    <id>58</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ЗаполнитьРасширеннаяПодсказка</name>
+      <id>59</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualButton</type>
+    <commandName>Form.Command.Заполнить</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>ГруппаДата</name>
     <id>7</id>
     <items xsi:type="form:FormField">
-      <name>ПериодДатаНачала</name>
-      <id>1</id>
+      <name>Период</name>
+      <id>62</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Период</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ПериодПриИзменении</name>
+      </handlers>
       <extendedTooltip>
-        <name>ПериодДатаНачалаРасширеннаяПодсказка</name>
-        <id>3</id>
+        <name>ПериодРасширеннаяПодсказка</name>
+        <id>64</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -22,46 +81,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПериодДатаНачалаКонтекстноеМеню</name>
-        <id>2</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>InputField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <extendedEditMultipleValues>true</extendedEditMultipleValues>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>ПериодДатаОкончания</name>
-      <id>4</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ПериодДатаОкончанияРасширеннаяПодсказка</name>
-        <id>6</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ПериодДатаОкончанияКонтекстноеМеню</name>
-        <id>5</id>
+        <name>ПериодКонтекстноеМеню</name>
+        <id>63</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -113,31 +134,31 @@
     </extInfo>
   </items>
   <items xsi:type="form:Table">
-    <name>ТабличнаяЧасть</name>
-    <id>9</id>
+    <name>ДоговораИРеализация</name>
+    <id>65</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Данные</segments>
+      <segments>Объект.ДоговорИРеализация</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>ТабличнаяЧастьНомерСтроки</name>
-      <id>22</id>
+      <name>ДоговораИРеализацияНомерСтроки</name>
+      <id>78</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Данные.LineNumber</segments>
+        <segments>Объект.ДоговорИРеализация.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка</name>
-        <id>24</id>
+        <name>ДоговораИРеализацияНомерСтрокиРасширеннаяПодсказка</name>
+        <id>80</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -146,8 +167,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьНомерСтрокиКонтекстноеМеню</name>
-        <id>23</id>
+        <name>ДоговораИРеализацияНомерСтрокиКонтекстноеМеню</name>
+        <id>79</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -161,19 +182,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ТабличнаяЧастьДоговор</name>
-      <id>25</id>
+      <name>ДоговораИРеализацияДоговор</name>
+      <id>81</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Данные.Договор</segments>
+        <segments>Объект.ДоговорИРеализация.Договор</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ТабличнаяЧастьДоговорРасширеннаяПодсказка</name>
-        <id>27</id>
+        <name>ДоговораИРеализацияДоговорРасширеннаяПодсказка</name>
+        <id>83</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -182,8 +203,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьДоговорКонтекстноеМеню</name>
-        <id>26</id>
+        <name>ДоговораИРеализацияДоговорКонтекстноеМеню</name>
+        <id>82</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -202,19 +223,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ТабличнаяЧастьДокумент</name>
-      <id>28</id>
+      <name>ДоговораИРеализацияДокумент</name>
+      <id>84</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Данные.Документ</segments>
+        <segments>Объект.ДоговорИРеализация.Документ</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ТабличнаяЧастьДокументРасширеннаяПодсказка</name>
-        <id>30</id>
+        <name>ДоговораИРеализацияДокументРасширеннаяПодсказка</name>
+        <id>86</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -223,8 +244,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьДокументКонтекстноеМеню</name>
-        <id>29</id>
+        <name>ДоговораИРеализацияДокументКонтекстноеМеню</name>
+        <id>85</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -243,42 +264,17 @@
       </extInfo>
     </items>
     <autoCommandBar>
-      <name>ТабличнаяЧастьКоманднаяПанель</name>
-      <id>11</id>
-      <items xsi:type="form:Button">
-        <name>ФормаЗаполнить</name>
-        <id>31</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ФормаЗаполнитьРасширеннаяПодсказка</name>
-          <id>32</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.Заполнить</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
+      <name>ДоговораИРеализацияКоманднаяПанель</name>
+      <id>67</id>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
     <searchStringAddition>
-      <name>ТабличнаяЧастьСтрокаПоиска</name>
-      <id>13</id>
+      <name>ДоговораИРеализацияСтрокаПоиска</name>
+      <id>69</id>
       <extendedTooltip>
-        <name>ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка</name>
-        <id>15</id>
+        <name>ДоговораИРеализацияСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>71</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -287,21 +283,21 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню</name>
-        <id>14</id>
+        <name>ДоговораИРеализацияСтрокаПоискаКонтекстноеМеню</name>
+        <id>70</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>ТабличнаяЧасть</source>
+      <source>ДоговораИРеализация</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
     </searchStringAddition>
     <viewStatusAddition>
-      <name>ТабличнаяЧастьСостояниеПросмотра</name>
-      <id>16</id>
+      <name>ДоговораИРеализацияСостояниеПросмотра</name>
+      <id>72</id>
       <extendedTooltip>
-        <name>ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка</name>
-        <id>18</id>
+        <name>ДоговораИРеализацияСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>74</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -310,22 +306,22 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню</name>
-        <id>17</id>
+        <name>ДоговораИРеализацияСостояниеПросмотраКонтекстноеМеню</name>
+        <id>73</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>ТабличнаяЧасть</source>
+      <source>ДоговораИРеализация</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
     </viewStatusAddition>
     <searchControlAddition>
-      <name>ТабличнаяЧастьУправлениеПоиском</name>
-      <id>19</id>
+      <name>ДоговораИРеализацияУправлениеПоиском</name>
+      <id>75</id>
       <extendedTooltip>
-        <name>ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка</name>
-        <id>21</id>
+        <name>ДоговораИРеализацияУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>77</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -334,19 +330,19 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню</name>
-        <id>20</id>
+        <name>ДоговораИРеализацияУправлениеПоискомКонтекстноеМеню</name>
+        <id>76</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>ТабличнаяЧасть</source>
+      <source>ДоговораИРеализация</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
     </searchControlAddition>
     <extendedTooltip>
-      <name>ТабличнаяЧастьРасширеннаяПодсказка</name>
-      <id>12</id>
+      <name>ДоговораИРеализацияРасширеннаяПодсказка</name>
+      <id>68</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -355,8 +351,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ТабличнаяЧастьКонтекстноеМеню</name>
-      <id>10</id>
+      <name>ДоговораИРеализацияКонтекстноеМеню</name>
+      <id>66</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <representation>HierarchicalList</representation>
@@ -389,6 +385,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -429,6 +429,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>Заполнить</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СоздатьРеализацииДоговор</name>
+    <title>
+      <key>ru</key>
+      <value>Создать реализации договор</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать реализации договор</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СоздатьРеализацииДоговор</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

@@ -627,6 +627,7 @@
   <roles>Role.ЧтениеНСИ</roles>
   <roles>Role.ЧтениеУчетныхЗаписейЭлектроннойПочты</roles>
   <roles>Role.ВКМ_РедактированиеОбслуживаниеКлиента</roles>
+  <roles>Role.ВКМ_РольДляМассовоеСозданиеДокументов</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
@@ -887,6 +888,7 @@
   <commonModules>CommonModule.ВКМ_РаботаСФормами</commonModules>
   <commonModules>CommonModule.ВКМ_ТелеграмБот</commonModules>
   <commonModules>CommonModule.ВКМ_ДлительныеОперации</commonModules>
+  <commonModules>CommonModule.ВКМ_ДлительныеОперации1</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
@@ -1366,8 +1368,6 @@
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.УправлениеИтогамиИАгрегатами</dataProcessors>
   <dataProcessors>DataProcessor.ВКМ_МассовоеСозданиеАктов</dataProcessors>
-  <dataProcessors>DataProcessor.ВКМ_МассовоеСозданиеАктов1</dataProcessors>
-  <dataProcessors>DataProcessor.ВКМ_МассовоеСозданиеАктов2</dataProcessors>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>

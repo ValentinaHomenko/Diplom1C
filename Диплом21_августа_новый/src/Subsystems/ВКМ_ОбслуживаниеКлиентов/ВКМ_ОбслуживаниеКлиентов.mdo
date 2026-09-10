@@ -15,5 +15,5 @@
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
   <content>InformationRegister.ВКМ_МасовоеСозданиеДокументов</content>
-  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов2</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
 </mdclass:Subsystem>

@@ -11,89 +11,29 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.Форма</defaultForm>
-  <attributes uuid="1f265d43-9b86-4398-a1f5-5b3b6d25e2a3">
-    <name>ИДЗадания</name>
+  <attributes uuid="2b2a4833-db00-4738-8654-f0ce33e64ff8">
+    <name>Период</name>
     <synonym>
       <key>ru</key>
-      <value>ИДЗадания</value>
+      <value>Период</value>
     </synonym>
     <type>
-      <types>UUID</types>
+      <types>StandardPeriod</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="40edd1dc-15d1-437d-b895-3f037b7f7a12">
-    <name>ДатаНачала</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата начала</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="07cb6e13-4a4d-42cb-bf90-01f13073949c">
-    <name>ДатаОкончания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата окончания</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="b27fd9c2-3019-430f-871f-a9d56263bb35">
-    <name>Индикатор</name>
-    <synonym>
-      <key>ru</key>
-      <value>Индикатор</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="baecf11e-286a-4c57-8629-90875b3d6e17">
-    <name>СтрокаСостояния</name>
-    <synonym>
-      <key>ru</key>
-      <value>Строка состояния</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <tabularSections uuid="a3dd2738-4673-4a15-bc3a-32af6ab0afec">
+  <tabularSections uuid="d82902db-d86d-43e5-87dc-10af76f67456">
     <producedTypes>
-      <objectType typeId="8833bb90-73da-451c-8176-0968be309357" valueTypeId="9276b4fc-7e63-41a2-82ad-6b90faef08c5"/>
-      <rowType typeId="d99fa8dc-666c-42c0-95df-9fcf3b35702f" valueTypeId="30cbcf4a-3b78-4fa2-a57a-61b2255abe2f"/>
+      <objectType typeId="7cfd6ca8-9e4d-44a8-8a54-2f18d55a19aa" valueTypeId="d54a9b50-be21-49c1-a246-7e61db8efe1e"/>
+      <rowType typeId="5d371dfa-40cf-48c2-83de-2bbf6ee7984b" valueTypeId="d243d93b-2e6a-49eb-b50c-5376426fd999"/>
     </producedTypes>
-    <name>Данные</name>
+    <name>ДоговорИРеализация</name>
     <synonym>
       <key>ru</key>
-      <value>Данные</value>
+      <value>Договор и реализация</value>
     </synonym>
-    <attributes uuid="aa5a2d0e-3eff-412b-a27e-8f1068938557">
+    <attributes uuid="1487ce0c-4bbb-46a2-b085-9b7eed60101c">
       <name>Договор</name>
       <synonym>
         <key>ru</key>
@@ -106,7 +46,7 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
-    <attributes uuid="2d71db49-4edb-4c35-b1d7-bce43c3d3b2a">
+    <attributes uuid="7fc367ff-fd30-441d-aa55-9c2ef2fae6c4">
       <name>Документ</name>
       <synonym>
         <key>ru</key>
