@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43ef48bc-fe07-41e3-b4d8-9422d7b98618">
+  <name>ВКМ_ТекущийСотрудник</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ текущий сотрудник</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ВКМ_Сотрудники</types>
+  </type>
+</mdclass:SessionParameter>

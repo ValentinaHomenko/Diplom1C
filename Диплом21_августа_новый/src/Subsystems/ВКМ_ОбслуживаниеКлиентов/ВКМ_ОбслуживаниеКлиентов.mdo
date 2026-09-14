@@ -16,4 +16,13 @@
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
   <content>InformationRegister.ВКМ_МасовоеСозданиеДокументов</content>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>ChartOfCalculationTypes.ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.Удержания</content>
+  <content>Document.ВКМ_НачислениеПремииПроцентом</content>
+  <content>CalculationRegister.ВКМ_Удержания</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>Catalog.ВКМ_Сотрудники</content>
 </mdclass:Subsystem>
