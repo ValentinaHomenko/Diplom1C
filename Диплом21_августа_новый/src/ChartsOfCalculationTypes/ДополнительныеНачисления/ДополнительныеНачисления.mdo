@@ -32,14 +32,16 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
   <predefined>
     <items id="77b6fa40-0e12-4d9b-873b-5dc0136c252b">
-      <name>ПремияПроцентом</name>
-      <description>Премия процентом</description>
+      <name>Премия</name>
+      <description>Премия</description>
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
-      <leading>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</leading>
+      <base>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</base>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

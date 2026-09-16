@@ -22,7 +22,7 @@
   <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.Удержания</content>
   <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
-  <content>Document.ВКМ_НачислениеПремииПроцентом</content>
+  <content>Document.ВКМ_НачислениеПремии</content>
   <content>CalculationRegister.ВКМ_Удержания</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>

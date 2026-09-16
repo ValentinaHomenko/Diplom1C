@@ -118,50 +118,9 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
-  <items xsi:type="form:FormField">
-    <name>ПроцентПремии</name>
-    <id>7</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ПроцентПремии</segments>
-    </dataPath>
-    <extendedTooltip>
-      <name>ПроцентПремииРасширеннаяПодсказка</name>
-      <id>9</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>ПроцентПремииКонтекстноеМеню</name>
-      <id>8</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <extendedEditMultipleValues>true</extendedEditMultipleValues>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-    </extInfo>
-  </items>
   <items xsi:type="form:Table">
     <name>Сотрудники</name>
-    <id>10</id>
+    <id>31</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -173,7 +132,7 @@
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
       <name>СотрудникиНомерСтроки</name>
-      <id>23</id>
+      <id>44</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -184,7 +143,7 @@
       </dataPath>
       <extendedTooltip>
         <name>СотрудникиНомерСтрокиРасширеннаяПодсказка</name>
-        <id>25</id>
+        <id>46</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -194,7 +153,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиНомерСтрокиКонтекстноеМеню</name>
-        <id>24</id>
+        <id>45</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
@@ -209,7 +168,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>СотрудникиСотрудник</name>
-      <id>26</id>
+      <id>47</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -220,7 +179,7 @@
       </dataPath>
       <extendedTooltip>
         <name>СотрудникиСотрудникРасширеннаяПодсказка</name>
-        <id>28</id>
+        <id>49</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -230,7 +189,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиСотрудникКонтекстноеМеню</name>
-        <id>27</id>
+        <id>48</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -248,18 +207,100 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
+    <items xsi:type="form:FormField">
+      <name>СотрудникиВидРасчета</name>
+      <id>62</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Сотрудники.ВидРасчета</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СотрудникиВидРасчетаРасширеннаяПодсказка</name>
+        <id>64</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СотрудникиВидРасчетаКонтекстноеМеню</name>
+        <id>63</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СотрудникиСуммаПремии</name>
+      <id>65</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Сотрудники.СуммаПремии</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СотрудникиСуммаПремииРасширеннаяПодсказка</name>
+        <id>67</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СотрудникиСуммаПремииКонтекстноеМеню</name>
+        <id>66</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
     <autoCommandBar>
       <name>СотрудникиКоманднаяПанель</name>
-      <id>12</id>
+      <id>33</id>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
     <searchStringAddition>
       <name>СотрудникиСтрокаПоиска</name>
-      <id>14</id>
+      <id>35</id>
       <extendedTooltip>
         <name>СотрудникиСтрокаПоискаРасширеннаяПодсказка</name>
-        <id>16</id>
+        <id>37</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -269,7 +310,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиСтрокаПоискаКонтекстноеМеню</name>
-        <id>15</id>
+        <id>36</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <source>Сотрудники</source>
@@ -279,10 +320,10 @@
     </searchStringAddition>
     <viewStatusAddition>
       <name>СотрудникиСостояниеПросмотра</name>
-      <id>17</id>
+      <id>38</id>
       <extendedTooltip>
         <name>СотрудникиСостояниеПросмотраРасширеннаяПодсказка</name>
-        <id>19</id>
+        <id>40</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -292,7 +333,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиСостояниеПросмотраКонтекстноеМеню</name>
-        <id>18</id>
+        <id>39</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
@@ -303,10 +344,10 @@
     </viewStatusAddition>
     <searchControlAddition>
       <name>СотрудникиУправлениеПоиском</name>
-      <id>20</id>
+      <id>41</id>
       <extendedTooltip>
         <name>СотрудникиУправлениеПоискомРасширеннаяПодсказка</name>
-        <id>22</id>
+        <id>43</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -316,7 +357,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиУправлениеПоискомКонтекстноеМеню</name>
-        <id>21</id>
+        <id>42</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
@@ -327,7 +368,7 @@
     </searchControlAddition>
     <extendedTooltip>
       <name>СотрудникиРасширеннаяПодсказка</name>
-      <id>13</id>
+      <id>34</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -337,9 +378,10 @@
     </extendedTooltip>
     <contextMenu>
       <name>СотрудникиКонтекстноеМеню</name>
-      <id>11</id>
+      <id>32</id>
       <autoFill>true</autoFill>
     </contextMenu>
+    <representation>HierarchicalList</representation>
     <changeRowSet>true</changeRowSet>
     <changeRowOrder>true</changeRowOrder>
     <autoMaxWidth>true</autoMaxWidth>
@@ -382,7 +424,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.ВКМ_НачислениеПремииПроцентом</types>
+      <types>DocumentObject.ВКМ_НачислениеПремии</types>
     </valueType>
     <view>
       <common>true</common>

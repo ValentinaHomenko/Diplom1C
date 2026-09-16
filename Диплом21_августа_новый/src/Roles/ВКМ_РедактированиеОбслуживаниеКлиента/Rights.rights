@@ -18717,7 +18717,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВКМ_НачислениеПремииПроцентом</name>
+		<name>Document.ВКМ_НачислениеПремии</name>
 		<right>
 			<name>Read</name>
 			<value>false</value>

@@ -1283,7 +1283,7 @@
   <documents>Document.ПоступлениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.ВКМ_ОбслуживаниеКлиента</documents>
-  <documents>Document.ВКМ_НачислениеПремииПроцентом</documents>
+  <documents>Document.ВКМ_НачислениеПремии</documents>
   <documents>Document.ВКМ_НачислениеЗарплаты</documents>
   <documentJournals>DocumentJournal.Деньги</documentJournals>
   <enums>Enum.ВариантыОтображенияМеток</enums>
