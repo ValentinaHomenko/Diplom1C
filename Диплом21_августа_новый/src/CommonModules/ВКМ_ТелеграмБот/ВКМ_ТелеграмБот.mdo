@@ -5,7 +5,7 @@
     <key>ru</key>
     <value>ТелеграмБот</value>
   </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
   <server>true</server>
   <externalConnection>true</externalConnection>
-  <serverCall>true</serverCall>
 </mdclass:CommonModule>
