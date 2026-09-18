@@ -15,7 +15,6 @@
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
   <content>InformationRegister.ВКМ_МасовоеСозданиеДокументов</content>
-  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>ChartOfCalculationTypes.ОсновныеНачисления</content>
   <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.Удержания</content>
@@ -26,4 +25,5 @@
   <content>Document.ВКМ_НачислениеЗарплаты</content>
   <content>Catalog.ВКМ_Сотрудники</content>
   <content>Constant.ВКМ_НДФЛ</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
 </mdclass:Subsystem>
