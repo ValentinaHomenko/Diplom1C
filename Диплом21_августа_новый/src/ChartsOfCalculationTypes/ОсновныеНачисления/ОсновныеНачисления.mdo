@@ -36,12 +36,29 @@
   <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
   <predefined>
+    <items id="9e66ab72-0d15-4b9c-965b-e921790131c9">
+      <name>ВыполненныеРаботы</name>
+      <description>Выполненные работы</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
     <items id="9da822e1-ea17-4ee1-859d-5e87b8b79c27">
       <name>Оклад</name>
       <description>Оклад</description>
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
+      <displaced>ChartOfCalculationTypes.ОсновныеНачисления.Отпуск</displaced>
+    </items>
+    <items id="148de7e6-c1ac-4ab8-a47f-36d6985ae360">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <base>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ОсновныеНачисления.Отпуск</base>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

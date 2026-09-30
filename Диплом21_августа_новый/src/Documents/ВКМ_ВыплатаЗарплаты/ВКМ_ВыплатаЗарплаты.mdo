@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a50cd3b5-1174-4e3d-9e25-42f8c4b3fb3f">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d60d93b-b0f8-4187-a380-ce5e1d71040c">
   <producedTypes>
-    <objectType typeId="0bc58b3d-5c84-43c0-a0e7-85e04a02ee96" valueTypeId="d6a8ac4b-1246-4b5c-bf33-dc9b68aee43e"/>
-    <refType typeId="9a094d86-9c93-4e9c-8ee6-dc677e7ac287" valueTypeId="a0c34e23-6e8b-46de-a1e2-a2ddffed291e"/>
-    <selectionType typeId="c049c2ae-d533-459f-b62a-5848de2ee8c3" valueTypeId="3d4d6b53-a8c4-43bd-90ce-5896c6f9b48f"/>
-    <listType typeId="ff9803bc-f583-4b99-9b71-4bec0641f4c2" valueTypeId="a51e1018-e38f-49b9-8a54-c1e8a6679663"/>
-    <managerType typeId="25ee778a-4034-41da-8c00-f6093815a5b8" valueTypeId="cf19e237-8b6e-4a28-ba69-00da8ad4d220"/>
+    <objectType typeId="ea53342c-8148-4f5d-9f29-3361cd5bbecd" valueTypeId="bd75617b-e2a1-4d37-badb-f2a2917c502c"/>
+    <refType typeId="bb066d09-be79-4d39-8e3b-558c677540aa" valueTypeId="e29a02e0-02ac-4984-b0f8-8b9d229cc51e"/>
+    <selectionType typeId="ceea998e-6236-4849-9021-bcdf489d041c" valueTypeId="24acb44d-9002-4786-a534-550ae65dfcee"/>
+    <listType typeId="3dbef5cf-ceb6-47f4-aade-f9871e4f0ea7" valueTypeId="399bd07f-282b-4b31-9b36-ed1b52dbfb80"/>
+    <managerType typeId="1b098a21-bafc-42a1-a00b-18fa0eb0caad" valueTypeId="230ad790-c859-415d-a2eb-4a6e55a1498c"/>
   </producedTypes>
   <name>ВКМ_ВыплатаЗарплаты</name>
   <synonym>
@@ -23,20 +23,30 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <registerRecords>AccumulationRegister.ВзаиморасчетыССотрудниками</registerRecords>
+  <defaultObjectForm>Document.ВКМ_ВыплатаЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <tabularSections uuid="69e9fb2c-32d0-40f2-9ed6-c8e1d28bd3d7">
+  <forms uuid="15dad894-ef29-420c-a9fb-5e07473378bc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="53b78383-34fc-4342-8b31-f33c487e1044">
     <producedTypes>
-      <objectType typeId="850356c2-6470-4fb2-8469-9041bbeb0eb0" valueTypeId="306075e6-e377-4174-bb2f-1db77a7eaf39"/>
-      <rowType typeId="259efd88-13e7-49eb-84fd-4f70b921d594" valueTypeId="a92de032-932a-4488-879a-24dcb1b90884"/>
+      <objectType typeId="691049c0-2af0-487b-829c-e969153adb92" valueTypeId="2ca1c0fc-b332-42fe-9049-ccf8134a1df8"/>
+      <rowType typeId="82a06bc2-d765-46a1-84b8-3413d923df2f" valueTypeId="9fa575a3-4122-449c-add5-513ec0214b72"/>
     </producedTypes>
     <name>Выплаты</name>
     <synonym>
       <key>ru</key>
       <value>Выплаты</value>
     </synonym>
-    <attributes uuid="74813cb7-4cda-4575-a7d8-a5dacd7cb22c">
+    <attributes uuid="75d37dd2-c2e0-40ea-b7db-a9e461ac2350">
       <name>Сотрудник</name>
       <synonym>
         <key>ru</key>
@@ -50,7 +60,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="34fc1edd-00a1-4cdb-a4cc-b0c5e07c8630">
+    <attributes uuid="dff07d37-0894-4580-9a4e-c8bfc058d21e">
       <name>Сумма</name>
       <synonym>
         <key>ru</key>

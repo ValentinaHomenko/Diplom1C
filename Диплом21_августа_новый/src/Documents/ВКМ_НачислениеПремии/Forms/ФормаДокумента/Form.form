@@ -209,7 +209,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>СотрудникиВидРасчета</name>
-      <id>62</id>
+      <id>50</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -220,7 +220,7 @@
       </dataPath>
       <extendedTooltip>
         <name>СотрудникиВидРасчетаРасширеннаяПодсказка</name>
-        <id>64</id>
+        <id>52</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -230,7 +230,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиВидРасчетаКонтекстноеМеню</name>
-        <id>63</id>
+        <id>51</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -250,7 +250,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>СотрудникиСуммаПремии</name>
-      <id>65</id>
+      <id>53</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -259,9 +259,13 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Сотрудники.СуммаПремии</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СотрудникиСуммаПремииПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>СотрудникиСуммаПремииРасширеннаяПодсказка</name>
-        <id>67</id>
+        <id>55</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -271,11 +275,93 @@
       </extendedTooltip>
       <contextMenu>
         <name>СотрудникиСуммаПремииКонтекстноеМеню</name>
-        <id>66</id>
+        <id>54</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СотрудникиНДФЛ</name>
+      <id>56</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Сотрудники.НДФЛ</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СотрудникиНДФЛРасширеннаяПодсказка</name>
+        <id>58</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СотрудникиНДФЛКонтекстноеМеню</name>
+        <id>57</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СотрудникиСуммаКВыплате</name>
+      <id>59</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Сотрудники.СуммаКВыплате</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СотрудникиСуммаКВыплатеРасширеннаяПодсказка</name>
+        <id>61</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СотрудникиСуммаКВыплатеКонтекстноеМеню</name>
+        <id>60</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>

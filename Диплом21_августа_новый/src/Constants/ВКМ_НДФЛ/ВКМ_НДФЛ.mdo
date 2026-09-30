@@ -8,7 +8,7 @@
   <name>ВКМ_НДФЛ</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ НДФЛ</value>
+    <value>Ставка НДФЛ</value>
   </synonym>
   <type>
     <types>Number</types>
